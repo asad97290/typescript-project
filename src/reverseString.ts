@@ -1,10 +1,10 @@
 
 function solve<T extends number|string>(arr:T[]):T[]{
-    let len = arr.length;
+    let len = arr?.length;
     if(len == 1){
       return [arr[0]];
     }
-    return [arr[len-1]].concat(solve(arr.slice(0,len-1)))
+    return [arr[len-1]].concat(solve(arr.slice(0,len-1)));
   }
   
   let str:string = "hello"

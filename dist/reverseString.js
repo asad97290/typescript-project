@@ -1,6 +1,6 @@
 "use strict";
 function solve(arr) {
-    let len = arr.length;
+    let len = arr === null || arr === void 0 ? void 0 : arr.length;
     if (len == 1) {
         return [arr[0]];
     }
